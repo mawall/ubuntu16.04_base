@@ -5,7 +5,7 @@ ENV PATH /opt/conda/bin:$PATH
 
 # Miniconda
 RUN apt-get update --fix-missing && \
-    apt-get install -y wget bzip2 ca-certificates curl git && \
+    apt-get install -y sudo wget bzip2 ca-certificates curl git vim && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
